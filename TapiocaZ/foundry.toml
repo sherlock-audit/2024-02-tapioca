@@ -1,0 +1,32 @@
+[profile.default]
+src = 'contracts'
+out = 'gen/out'
+libs = ['node_modules', 'lib']
+test = 'test'
+cache_path  = 'gen/cache_forge'
+
+solc_version='0.8.22'
+evm_version='paris'
+optimizer = true
+optimizer_runs = 100
+
+
+remappings = [
+    "contracts/=contracts/",
+	'forge-deploy/=node_modules/forge-deploy/contracts/',
+	"solidity-bytes-utils/=node_modules/@layerzerolabs/solidity-bytes-utils/",
+	"forge-std/=lib/forge-std/src/",
+	"tapioca-sdk/=gitmodule/tapioca-sdk/contracts/",
+	"tapioca-periph/=gitmodule/tapioca-periph/contracts/",
+	"yieldbox/=gitmodule/tap-yieldbox/contracts/",
+	"permitc/=gitmodule/tapioca-periph/gitmodule/permitc/src/", # Needs to be init in the periph repo
+]
+
+# forge-dpeloy
+fs_permissions = [
+	{ access = "read-write", path = "./deployments"},
+	{ access = "read", path = "./out"}
+]
+
+[etherscan]
+arbitrum-sepolia = { key = "${ARBITRUM_SEPOLIA_API_KEY}", url = "https://api-sepolia.arbiscan.io/api"}

@@ -1,0 +1,29 @@
+[profile.default]
+src = 'contracts'
+out = 'gen/out'
+libs = ['node_modules', 'lib']
+cache_path  = 'gen/cache_forge'
+broadcast = 'gen/broadcast'
+
+solc_version='0.8.22'
+evm_version='paris'
+optimizer = true
+optimizer_runs = 100
+
+remappings = [
+    "tapioca-periph/=contracts/",
+	"solidity-bytes-utils/=node_modules/@layerzerolabs/solidity-bytes-utils/",
+	"tapioca-sdk/=gitmodule/tapioca-sdk/src/",
+	"tapioca-bar/=gitmodule/Tapioca-bar/contracts/",
+	"yieldbox/=gitmodule/tap-yieldbox/contracts/",
+	"permitc/=gitmodule/permitc/src/",
+]
+
+# forge-dpeloy
+fs_permissions = [
+	{ access = "read-write", path = "./deployments"},
+	{ access = "read", path = "./out"}
+]
+
+[etherscan]
+arbitrum-sepolia = { key = "${ARBITRUM_SEPOLIA_API_KEY}", url = "https://api-sepolia.arbiscan.io/api"}

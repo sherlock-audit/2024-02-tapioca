@@ -1,0 +1,27 @@
+[submodule "Tapioca-bar/lib/forge-std"]
+	path = Tapioca-bar/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Tapioca-bar/gitmodule/tapioca-sdk"]
+	path = Tapioca-bar/gitmodule/tapioca-sdk
+	url = https://github.com/Tapioca-DAO/tapioca-sdk
+[submodule "Tapioca-bar/gitmodule/tapioca-yieldbox"]
+	path = Tapioca-bar/gitmodule/tapioca-yieldbox
+	url = https://github.com/Tapioca-DAO/tap-yieldbox
+[submodule "Tapioca-bar/gitmodule/tap-yieldbox"]
+	path = Tapioca-bar/gitmodule/tap-yieldbox
+	url = https://github.com/Tapioca-DAO/tap-yieldbox
+[submodule "Tapioca-bar/gitmodule/tapioca-mocks"]
+	path = Tapioca-bar/gitmodule/tapioca-mocks
+	url = https://github.com/Tapioca-DAO/tapioca-mocks
+[submodule "Tapioca-bar/gitmodule/permitc"]
+	path = Tapioca-bar/gitmodule/permitc
+	url = https://github.com/limitbreakinc/PermitC.git
+[submodule "TapiocaZ/lib/forge-std"]
+	path = TapiocaZ/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "TapiocaZ/gitmodule/tapioca-sdk"]
+	path = TapiocaZ/gitmodule/tapioca-sdk
+	url = https://github.com/Tapioca-DAO/tapioca-sdk
+[submodule "TapiocaZ/gitmodule/tap-yieldbox"]
+	path = TapiocaZ/gitmodule/tap-yieldbox
+	url = https://github.com/Tapioca-DAO/tap-yieldbox
